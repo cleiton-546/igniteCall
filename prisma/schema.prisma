@@ -20,7 +20,7 @@ model User {
 
   accounts          Account[]
   sessions          Session[]
-  TimerInterval UserTimeInterval[]
+  timerInterval UserTimeInterval[]
 
   @@map("users")
 }
@@ -64,5 +64,5 @@ model UserTimeInterval {
   user    User   @relation(fields: [user_id], references: [id])
   user_id String
 
-  @@map("user_time-intervals")
+  @@map("user-time-intervals")
 }

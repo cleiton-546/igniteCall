@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/users/time-intervals
+
+
+Content-Type: application/json
+{
+    "campo1": "valor1",
+    "campo2": "valor2"
+}
